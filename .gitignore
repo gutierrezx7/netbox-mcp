@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / bytecode files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# IDE / Editor specific
+.idea/
+.vscode/
+*.swp
+*~
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Sisyphus temporary files
+.sisyphus/
+
+# Python cache
+.mypy_cache/
+
+# Database files
+*.db
+*.sqlite3
+
+# Docker artifacts
+# .dockerignore (not to be ignored)
+docker-compose.override.yml?
+
+# Node.js (if applicable)
+node_modules/
+
+# Java cache (if applicable)
+.m2/
+.cache/
