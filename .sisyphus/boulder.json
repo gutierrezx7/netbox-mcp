@@ -1,0 +1,35 @@
+{
+  "active_plan": "/root/projects/netbox-mcp/.sisyphus/plans/netbox-mcp-crud-implementation.md",
+  "started_at": "2026-04-26T19:58:53.508Z",
+  "session_ids": [
+    "ses_234a06796ffeuYQW6FM4ywEbTT",
+    "ses_2349f0ff8ffe2enAX01aCFLz11",
+    "ses_2349f0f9cffespnCI593lIxc9N",
+    "ses_2349f0f81ffeSjL8h3IAMrcwYG",
+    "ses_2349f0f6fffeXRCAkPxWZ43Pf1",
+    "ses_2349e79b2ffe4z0n67INelAK2A",
+    "ses_2349e7961ffeY5HjFQfczFAkS2",
+    "ses_2349e7937ffe8zCaPQ50tTcE8G",
+    "ses_2349e792fffexQrZXWjV35GJEY",
+    "ses_2349e31c5ffeNtxiPUebenNhdF",
+    "ses_2348f31aaffeKKuaxqoflnGzsR",
+    "ses_2348e6646ffeTfujD7yGxGgC1K"
+  ],
+  "session_origins": {
+    "ses_234a06796ffeuYQW6FM4ywEbTT": "direct",
+    "ses_2349f0ff8ffe2enAX01aCFLz11": "appended",
+    "ses_2349f0f9cffespnCI593lIxc9N": "appended",
+    "ses_2349f0f81ffeSjL8h3IAMrcwYG": "appended",
+    "ses_2349f0f6fffeXRCAkPxWZ43Pf1": "appended",
+    "ses_2349e79b2ffe4z0n67INelAK2A": "appended",
+    "ses_2349e7961ffeY5HjFQfczFAkS2": "appended",
+    "ses_2349e7937ffe8zCaPQ50tTcE8G": "appended",
+    "ses_2349e792fffexQrZXWjV35GJEY": "appended",
+    "ses_2349e31c5ffeNtxiPUebenNhdF": "appended",
+    "ses_2348f31aaffeKKuaxqoflnGzsR": "direct",
+    "ses_2348e6646ffeTfujD7yGxGgC1K": "appended"
+  },
+  "plan_name": "netbox-mcp-crud-implementation",
+  "agent": "atlas",
+  "task_sessions": {}
+}
