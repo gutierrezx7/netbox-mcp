@@ -135,7 +135,8 @@ Histórico de mudanças com filtros.
  - [x] T1.2: config.py (Settings pydantic, env vars, CLI args)
   - [x] T1.3: types.py (NETBOX_OBJECT_TYPES completo - 50+ tipos)
   - [x] T1.4: client.py (NetBoxRestClient com GET/POST/PATCH/DELETE)
- - [ ] T1.5: validators.py (filter validation)
+- [ ] T1.5: validators.py (filter validation)
+ - [x] T1.5: validators.py (filter validation)
  - [ ] T1.6: server.py (FastMCP server + 7 tools)
 
 ### FASE 2: Ferramentas READ (3 tools)
