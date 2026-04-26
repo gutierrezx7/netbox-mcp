@@ -141,8 +141,8 @@ Histórico de mudanças com filtros.
 
 ### FASE 2: Ferramentas READ (3 tools)
 - [x] T2.1: netbox_search_objects
- - [x] T2.2: netbox_get_objects + paginação
- - [ ] T2.3: netbox_get_object_by_id + field filtering
+- [x] T2.2: netbox_get_objects + paginação
+ - [x] T2.3: netbox_get_object_by_id + field filtering
 
 ### FASE 3: Ferramentas WRITE (3 tools) 🆕
 - [ ] T3.1: netbox_create_object (POST)
