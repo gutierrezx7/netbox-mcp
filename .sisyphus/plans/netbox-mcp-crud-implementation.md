@@ -133,8 +133,8 @@ Histórico de mudanças com filtros.
 ### FASE 1: Estrutura Base
  - [x] T1.1: pyproject.toml (dependências, metadata, scripts)
  - [x] T1.2: config.py (Settings pydantic, env vars, CLI args)
- - [ ] T1.3: types.py (NETBOX_OBJECT_TYPES completo - 50+ tipos)
- - [ ] T1.4: client.py (NetBoxRestClient com GET/POST/PATCH/DELETE)
+  - [x] T1.3: types.py (NETBOX_OBJECT_TYPES completo - 50+ tipos)
+  - [x] T1.4: client.py (NetBoxRestClient com GET/POST/PATCH/DELETE)
  - [ ] T1.5: validators.py (filter validation)
  - [ ] T1.6: server.py (FastMCP server + 7 tools)
 
