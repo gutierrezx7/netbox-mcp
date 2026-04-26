@@ -145,9 +145,9 @@ Histórico de mudanças com filtros.
  - [x] T2.3: netbox_get_object_by_id + field filtering
 
 ### FASE 3: Ferramentas WRITE (3 tools) 🆕
-- [ ] T3.1: netbox_create_object (POST)
-- [ ] T3.2: netbox_update_object (PATCH)
-- [ ] T3.3: netbox_delete_object (DELETE)
+ - [x] T3.1: netbox_create_object (POST)
+ - [ ] T3.2: netbox_update_object (PATCH)
+ - [ ] T3.3: netbox_delete_object (DELETE)
 
 ### FASE 4: Changelogs (1 tool)
 - [ ] T4.1: netbox_get_changelogs
