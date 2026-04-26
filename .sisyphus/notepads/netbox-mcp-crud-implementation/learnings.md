@@ -6,7 +6,15 @@
 
 Added pyproject.toml to the repository root. This file defines project metadata, build system requirements, and dependencies. It includes runtime dependencies like pydantic and httpx, development dependencies such as pytest, black, and ruff, and sets up an entrypoint script 'netbox-mcp' to run the server. This configuration allows the package to be installed and executed correctly.
 
+## 2026-04-26 11:00:00 - T1.3: NETBOX_OBJECT_TYPES implementation
 
-- [2026-04-26T20:40:00Z] Subagent created `src/netbox_mcp_server/config.py` and `tests/test_config.py`.
-  - Observations: The Settings class uses pydantic.BaseSettings via `pydantic_settings` import and provides a cached `get_settings(cli_args=None)` accessor. Tests exercise env var loading and CLI overrides.
-  - Blocker: Unable to run pytest or lsp_diagnostics in this environment — Python interpreter and language server are not installed. Verification (tests and LSP checks) could not be executed here. See issues.md for details.
+Created `src/netbox_mcp_server/types.py` containing the `NETBOX_OBJECT_TYPES` mapping, which includes over 50 entries for various NetBox object types and their corresponding API endpoint paths across DCIM, IPAM, Circuits, Tenancy, Virtualization, Extras, and Wireless modules. A docstring explaining its usage and an example were included.
+
+Created `tests/test_types.py` with unit tests to verify the structure of `NETBOX_OBJECT_TYPES`. The tests check for the presence of key expected types and ensure that endpoint paths are correctly formatted and non-empty.
+
+**Uncertainties:**
+- Verification of tests and `lsp_diagnostics` could not be performed in this environment due to the lack of a Python interpreter and language server. This has been noted in `issues.md`. Manual verification will be required on a suitable environment.
+
+## Decisions Log
+
+- **NETBOX_OBJECT_TYPES structure**: Chose a `Dict[str, str]` mapping object type strings (e.g., 'dcim.sites') to endpoint path strings (e.g., 'dcim/sites') for direct translation. This provides a clear and deterministic way to access endpoint paths.
