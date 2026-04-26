@@ -45,3 +45,31 @@ def netbox_get_objects(client, object_type: str, filters: Optional[Dict[str, Any
         return resp.json()
     except Exception:
         raise
+
+
+def get_object_by_id(client, object_type: str, obj_id: int, fields: Optional[str] = None) -> Dict[str, Any]:
+    """Retrieve a single object by its ID with optional field filtering.
+
+    Args:
+        client: NetBoxRestClient-like instance with .get(path, params)
+        object_type: key from NETBOX_OBJECT_TYPES map (e.g., 'dcim.sites')
+        obj_id: numeric identifier of the object
+        fields: optional comma-separated list of fields to return
+
+    Returns:
+        The JSON-decoded object dict as returned by NetBox.
+    """
+    if object_type not in NETBOX_OBJECT_TYPES:
+        raise ValueError(f"unknown object_type: {object_type}")
+
+    endpoint = NETBOX_OBJECT_TYPES[object_type]
+    path = f"/{endpoint}{obj_id}/"
+    params = {}
+    if fields:
+        params["fields"] = fields
+
+    resp = client.get(path, params=params)
+    try:
+        return resp.json()
+    except Exception:
+        raise
