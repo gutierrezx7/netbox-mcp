@@ -153,10 +153,10 @@ Histórico de mudanças com filtros.
  - [x] T4.1: netbox_get_changelogs
 
 ### FASE 5: Documentação + GitHub
- - [ ] T5.1: README.md (badges, quickstart, exemplos, architecture)
- - [ ] T5.2: CONTRIBUTING.md + CHANGELOG.md + LICENSE
- - [x] T5.3: .env.example + .gitignore + Dockerfile
- - [ ] T5.4: Commit inicial + git remote
+  - [x] T5.1: README.md (badges, quickstart, exemplos, architecture)
+  - [x] T5.2: CONTRIBUTING.md + CHANGELOG.md + LICENSE
+  - [x] T5.3: .env.example + .gitignore + Dockerfile
+  - [ ] T5.4: Commit inicial + git remote
 
 ### FASE 6: Testes
 - [ ] T6.1: test_client.py (mock HTTP responses)
