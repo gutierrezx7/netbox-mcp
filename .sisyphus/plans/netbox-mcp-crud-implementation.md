@@ -150,7 +150,7 @@ Histórico de mudanças com filtros.
  - [x] T3.3: netbox_delete_object (DELETE)
 
 ### FASE 4: Changelogs (1 tool)
-- [ ] T4.1: netbox_get_changelogs
+ - [x] T4.1: netbox_get_changelogs
 
 ### FASE 5: Documentação + GitHub
  - [ ] T5.1: README.md (badges, quickstart, exemplos, architecture)
