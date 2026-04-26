@@ -131,7 +131,7 @@ Histórico de mudanças com filtros.
 ## 6. Plano de Execução
 
 ### FASE 1: Estrutura Base
-- [ ] T1.1: pyproject.toml (dependências, metadata, scripts)
+- [x] T1.1: pyproject.toml (dependências, metadata, scripts)
 - [ ] T1.2: config.py (Settings pydantic, env vars, CLI args)
 - [ ] T1.3: types.py (NETBOX_OBJECT_TYPES completo - 50+ tipos)
 - [ ] T1.4: client.py (NetBoxRestClient com GET/POST/PATCH/DELETE)
@@ -152,10 +152,10 @@ Histórico de mudanças com filtros.
 - [ ] T4.1: netbox_get_changelogs
 
 ### FASE 5: Documentação + GitHub
-- [ ] T5.1: README.md (badges, quickstart, exemplos, architecture)
-- [ ] T5.2: CONTRIBUTING.md + CHANGELOG.md + LICENSE
-- [ ] T5.3: .env.example + .gitignore + Dockerfile
-- [ ] T5.4: Commit inicial + git remote
+ - [ ] T5.1: README.md (badges, quickstart, exemplos, architecture)
+ - [ ] T5.2: CONTRIBUTING.md + CHANGELOG.md + LICENSE
+ - [x] T5.3: .env.example + .gitignore + Dockerfile
+ - [ ] T5.4: Commit inicial + git remote
 
 ### FASE 6: Testes
 - [ ] T6.1: test_client.py (mock HTTP responses)

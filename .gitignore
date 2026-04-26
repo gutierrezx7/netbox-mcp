@@ -31,7 +31,10 @@ coverage.xml
 Thumbs.db
 
 # Sisyphus temporary files
-.sisyphus/
+# Note: keep .sisyphus/plans and .sisyphus/notepads tracked to preserve plan state
+# Ignore transient sisyphus temp directories instead
+.sisyphus/tmp/
+.sisyphus/cache/
 
 # Python cache
 .mypy_cache/
