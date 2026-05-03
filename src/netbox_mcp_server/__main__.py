@@ -17,6 +17,7 @@ def main():
         token=settings.NETBOX_TOKEN,
         timeout=settings.TIMEOUT,
         rate_limit=settings.RATE_LIMIT,
+        ssl_verify=settings.NETBOX_SSL_VERIFY,
     )
 
     register_tools(client)

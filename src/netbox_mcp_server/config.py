@@ -9,6 +9,7 @@ from pydantic import ValidationError
 class Settings(BaseSettings):
     NETBOX_URL: str
     NETBOX_TOKEN: str
+    NETBOX_SSL_VERIFY: bool = True
     TIMEOUT: int = 30
     RATE_LIMIT: int = 10
     BULK_MAX: int = 100
@@ -43,6 +44,7 @@ def get_settings(cli_args: Optional[List[str]] = None) -> Settings:
         parser.add_argument('--timeout', type=int, help='Request timeout in seconds')
         parser.add_argument('--rate-limit', type=int, help='API rate limit per second')
         parser.add_argument('--bulk-max', type=int, help='Maximum items for bulk operations')
+        parser.add_argument('--netbox-ssl-verify', type=lambda v: v.lower() in ('1', 'true', 'yes'), help='Enable SSL certificate verification for NetBox (true/false)')
         parser.add_argument('--log-level', type=str, help='Logging level (e.g., INFO, DEBUG)')
 
         # Parse arguments. If cli_args is provided, use it.
