@@ -10,7 +10,7 @@ class NetBoxRestClient:
     Handles authentication, request methods, timeouts, retries, and rate limiting.
     """
 
-    def __init__(self, base_url: str, token: str, timeout: int = 10, rate_limit: int = 1):
+    def __init__(self, base_url: str, token: str, timeout: int = 10, rate_limit: int = 1, ssl_verify: bool = True):
         """
         Initializes the NetBoxRestClient.
 
@@ -24,6 +24,7 @@ class NetBoxRestClient:
         self.token = token
         self.timeout = timeout
         self.rate_limit = rate_limit
+        self.ssl_verify = ssl_verify
         self.session = requests.Session()
         self.session.headers.update({
             "Authorization": f"Token {self.token}",
@@ -66,7 +67,8 @@ class NetBoxRestClient:
                     url,
                     json=json,
                     params=params,
-                    timeout=self.timeout
+                    timeout=self.timeout,
+                    verify=self.ssl_verify,
                 )
                 response.raise_for_status()  # Raise HTTPError for bad responses (4xx or 5xx)
                 return response
