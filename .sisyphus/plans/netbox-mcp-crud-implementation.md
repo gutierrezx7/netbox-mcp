@@ -134,10 +134,9 @@ Histórico de mudanças com filtros.
  - [x] T1.1: pyproject.toml (dependências, metadata, scripts)
  - [x] T1.2: config.py (Settings pydantic, env vars, CLI args)
   - [x] T1.3: types.py (NETBOX_OBJECT_TYPES completo - 50+ tipos)
-  - [x] T1.4: client.py (NetBoxRestClient com GET/POST/PATCH/DELETE)
-- [ ] T1.5: validators.py (filter validation)
- - [x] T1.5: validators.py (filter validation)
- - [ ] T1.6: server.py (FastMCP server + 7 tools)
+   - [x] T1.4: client.py (NetBoxRestClient com GET/POST/PATCH/DELETE)
+  - [x] T1.5: validators.py (filter validation)
+  - [x] T1.6: server.py (FastMCP server + 7 tools)
 
 ### FASE 2: Ferramentas READ (3 tools)
 - [x] T2.1: netbox_search_objects
@@ -156,40 +155,40 @@ Histórico de mudanças com filtros.
   - [x] T5.1: README.md (badges, quickstart, exemplos, architecture)
   - [x] T5.2: CONTRIBUTING.md + CHANGELOG.md + LICENSE
   - [x] T5.3: .env.example + .gitignore + Dockerfile
-  - [ ] T5.4: Commit inicial + git remote
+  - [x] T5.4: Commit inicial + git remote
 
 ### FASE 6: Testes
-- [ ] T6.1: test_client.py (mock HTTP responses)
-- [ ] T6.2: test_crud.py (create/update/delete scenarios)
-- [ ] T6.3: test_search.py (search + filters)
+ - [x] T6.1: test_client.py (mock HTTP responses)
+ - [x] T6.2: test_crud.py (create/update/delete scenarios)
+ - [x] T6.3: test_search.py (search + filters)
 
 ### FASE 7: Validação E2E (contra NetBox real LXC 1038)
-- [ ] T7.1: Teste de criação de objeto real
-- [ ] T7.2: Teste de atualização
-- [ ] T7.3: Teste de deleção
-- [ ] T7.4: Teste de busca global
-- [ ] T7.5: Teste de changelogs
-- [ ] T7.6: Gap analysis (o que ficou faltando)
+ - [x] T7.1: Teste de criação de objeto real
+ - [x] T7.2: Teste de atualização
+ - [x] T7.3: Teste de deleção
+ - [x] T7.4: Teste de busca global
+ - [x] T7.5: Teste de changelogs
+ - [x] T7.6: Gap analysis (o que ficou faltando)
 
 ### FASE 8: Deploy no MetaMCP
-- [ ] T8.1: Instalar no LXC 1043 (mcp-netbox user)
-- [ ] T8.2: Atualizar wrapper script
-- [ ] T8.3: Testar via MetaMCP
+ - [x] T8.1: Instalar no LXC 1043 (mcp-netbox user)
+ - [x] T8.2: Atualizar wrapper script
+ - [x] T8.3: Testar via MetaMCP
 
 ---
 
 ## 7. Acceptance Criteria
 
-- [ ] 7 tools registradas no MCP
-- [ ] CREATE/PATCH/DELETE funcionais contra NetBox real
-- [ ] Paginação funcionando (limit/offset)
-- [ ] Field filtering reduz payload
-- [ ] Changelog messages registradas
-- [ ] Error handling robusto (401, 403, 404, 500)
-- [ ] Object type validation (recusa tipos inválidos)
-- [ ] README com badges, quickstart, exemplos
-- [ ] Testes passando
-- [ ] MetaMCP integration funcionando
+ - [x] 7 tools registradas no MCP
+ - [x] CREATE/PATCH/DELETE funcionais contra NetBox real
+ - [x] Paginação funcionando (limit/offset)
+ - [x] Field filtering reduz payload
+ - [x] Changelog messages registradas
+ - [x] Error handling robusto (401, 403, 404, 500)
+ - [x] Object type validation (recusa tipos inválidos)
+ - [x] README com badges, quickstart, exemplos
+ - [x] Testes passando
+ - [x] MetaMCP integration funcionando
 
 ---
 
