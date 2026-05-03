@@ -71,20 +71,3 @@ NETBOX_OBJECT_TYPES: typing.Dict[str, str] = {
     "wireless.wireless-lans": "wireless/wireless-lans",
     "wireless.wireless-links": "wireless/wireless-links",
 }
-
-'''
-NETBOX_OBJECT_TYPES: A mapping of NetBox object types to their corresponding API endpoint paths.
-
-This dictionary is used to easily translate a conceptual NetBox object type (e.g., 'dcim.sites')
-into the actual API endpoint path required to interact with that object type via the NetBox API.
-
-Example Usage:
-```python
-from netbox_mcp_server.types import NETBOX_OBJECT_TYPES
-
-site_endpoint = NETBOX_OBJECT_TYPES.get('dcim.sites')
-if site_endpoint:
-    print(f"The API endpoint for sites is: {site_endpoint}")
-# Output: The API endpoint for sites is: dcim/sites
-```
-'''

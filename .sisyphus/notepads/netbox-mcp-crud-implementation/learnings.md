@@ -18,3 +18,7 @@
 
 - [2026-04-27T00:05:00Z] Final Wave Prepared: Reviewer checklists (F1-F4) added under `.sisyphus/final_reviewers/` to guide manual verification and acceptance.
 \n- [2026-04-26T23:40:08Z] FINAL VERIFICATION: All reviewers APPROVED (F1,F2,F3,F4). See approvals file: approvals.txt\n
+
+- [2026-05-03] **MCP Server Wrapper Created**: Created `server.py` and `__main__.py` using FastMCP 3.2.4. Closure pattern used to inject NetBoxRestClient without exposing it as a tool parameter. All 7 tools registered via `mcp.add_tool()`.
+- [2026-05-03] **FastMCP API**: `mcp.add_tool(fn, name=...)` works with sync functions. `mcp.run(transport='stdio')` for stdio transport. `_tool_manager.list_tools()` returns registered tools.
+- [2026-05-03] **CLI Args Separation**: Used `parse_known_args()` with `add_help=False` to extract `--transport` before passing remaining args to `get_settings()`. Converted remaining to tuple because `get_settings` uses `@lru_cache` which requires hashable args.

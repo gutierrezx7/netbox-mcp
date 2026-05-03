@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "mem0-netbox-mcp": {
+      "type": "remote",
+      "url": "http://100.101.10.42:12008/metamcp/memory-netbox-mcp/mcp",
+      "enabled": true,
+      "timeout": 5000,
+      "headers": {
+        "X-API-Key": "sk_mt_2a7TA1oW2GIbxPh4uyDl7KBOrDbI7nmLzCrJQ5zm0AEtqTRhbh71WqZkmXbu59US",
+        "Accept": "application/json,text/event-stream"
+      }
+    }
+  }
+}
