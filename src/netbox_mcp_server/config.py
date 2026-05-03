@@ -3,7 +3,8 @@ import argparse
 from typing import Optional, List, Dict, Any
 from functools import lru_cache
 
-from pydantic_settings import BaseSettings, SettingsConfigDict, Field, ValidationError
+from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic import ValidationError
 
 class Settings(BaseSettings):
     NETBOX_URL: str
