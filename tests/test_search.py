@@ -1,5 +1,5 @@
 import pytest
-from unittest.mock import MagicMock
+from unittest.mock import MagicMock, PropertyMock
 
 from netbox_mcp_server.search import netbox_search_objects
 
@@ -14,15 +14,19 @@ def test_netbox_search_objects_aggregates_results():
     resp_devices = MagicMock()
     resp_devices.json.return_value = {"count": 1, "results": [{"id": 2, "name": "Device X"}]}
 
-    # Make client.get return different responses based on path
-    def get_side_effect(path, params=None):
-        if "/dcim/sites/" in path:
+    # The new implementation uses client.session.get() to bypass rate limiting
+    def session_get_side_effect(url, params=None, timeout=None, verify=None):
+        if "/dcim/sites/" in url:
             return resp_sites
-        if "/dcim/devices/" in path:
+        if "/dcim/devices/" in url:
             return resp_devices
-        raise RuntimeError("unexpected path")
+        raise RuntimeError(f"unexpected url: {url}")
 
-    client.get.side_effect = get_side_effect
+    client.base_url = "http://netbox.example.com"
+    client.timeout = 30
+    client.ssl_verify = True
+    client.session = MagicMock()
+    client.session.get.side_effect = session_get_side_effect
 
     result = netbox_search_objects(client, q="test", limit=10)
 
