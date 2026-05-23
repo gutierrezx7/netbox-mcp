@@ -53,3 +53,6 @@ node_modules/
 # Java cache (if applicable)
 .m2/
 .cache/
+
+# OpenCode config (should never be tracked)
+opencode.json
